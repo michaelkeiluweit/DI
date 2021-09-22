@@ -1,0 +1,14 @@
+services:
+
+  _defaults:
+    public: false
+    autowire: true      # Automatically injects dependencies in your services.
+
+  MichaelKeiluweit\ProjectName\Application\:
+
+    # Anything in Application
+    resource: '../*'
+    #exclude: '../{DependencyInjection,Entity,Tests,Kernel.php}'
+
+  MichaelKeiluweit\ProjectName\Application\Authentication:
+    public: true
